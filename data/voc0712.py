@@ -35,7 +35,7 @@ class VOCAnnotationTransform(object):
     Arguments:
         class_to_ind (dict, optional): dictionary lookup of classnames -> indexes
             (default: alphabetic indexing of VOC's 20 classes)
-        keep_difficult (bool, optional): keep difficult instances or not
+        keep_difficult: keep or discard objects that are considered difficult to detect?
             (default: False)
         height (int): height
         width (int): width
