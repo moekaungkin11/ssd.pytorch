@@ -21,7 +21,8 @@ voc = {
     'min_sizes': [30, 60, 111, 162, 213, 264],
     'max_sizes': [60, 111, 162, 213, 264, 315],
     # 'aspect_ratios' : [[2, 1/2], [2, 1/2, 3, 1/3], [2, 1/2, 3, 1/3],
-    #[2, 1/2, 3, 1/3], [2, 1/2], [2, 1/2]],
+    #[2, 1/2, 3, 1/3], [2, 1/2], [2, 1/2]], omit aspect ratio of smalll square of size and large square of size
+    # When has 1 aspect ratio, every location has 4 boxes, 2 ratio 6 boxes.
     'aspect_ratios': [[2], [2, 3], [2, 3], [2, 3], [2], [2]],
     'variance': [0.1, 0.2],
     'clip': True,
